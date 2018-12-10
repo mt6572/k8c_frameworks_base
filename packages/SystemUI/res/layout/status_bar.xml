@@ -26,6 +26,8 @@
     android:background="@drawable/system_bar_background"
     android:orientation="vertical"
     android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
     android:descendantFocusability="afterDescendants"
     android:fitsSystemWindows="true"
     >
