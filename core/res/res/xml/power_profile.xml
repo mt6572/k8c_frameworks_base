@@ -58,7 +58,7 @@
       <value>259.0</value> <!-- ** copied from samsung/crespo -->
   </array>
   <!-- This is the battery capacity in mAh -->
-  <item name="battery.capacity">2000</item>
+  <item name="battery.capacity">580</item>
   <!-- new fields -->
   <item name="bluetooth.at">15.35</item>
   <item name="wifi.browse.active">118.98</item>
