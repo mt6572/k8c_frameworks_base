@@ -2092,20 +2092,20 @@ public class PhoneWindow extends Window implements MenuBuilder.Callback {
                 //Log.i(TAG, "phonewindow:zzzzzzup!"+",x = " + ev.getX() + ",mdownX = " + mDownX+",width = "+width);
                 if(mDownX > (width - 15) && (mDownX - x) > 20)
                 {
-                  	sendEvent(KeyEvent.ACTION_DOWN,KeyEvent.KEYCODE_BACK,SystemClock.uptimeMillis());
-					sendEvent(KeyEvent.ACTION_UP,KeyEvent.KEYCODE_BACK,SystemClock.uptimeMillis()+100);  
-					return true;
+                  	sendEvent(KeyEvent.ACTION_DOWN,KeyEvent.KEYCODE_MENU,SystemClock.uptimeMillis());
+			sendEvent(KeyEvent.ACTION_UP,KeyEvent.KEYCODE_MENU,SystemClock.uptimeMillis()+100);  
+			return true;
                 }
-				else if(mDownX < 15 && (x - mDownX) > 30)
-				{
-					//sendEvent(KeyEvent.ACTION_DOWN,KeyEvent.KEYCODE_BACK,SystemClock.uptimeMillis());
-					//sendEvent(KeyEvent.ACTION_UP,KeyEvent.KEYCODE_BACK,SystemClock.uptimeMillis()+100);  
-					//return true;
+		else if(mDownX < 15 && (x - mDownX) > 30)
+		{
+			sendEvent(KeyEvent.ACTION_DOWN,KeyEvent.KEYCODE_BACK,SystemClock.uptimeMillis());
+			sendEvent(KeyEvent.ACTION_UP,KeyEvent.KEYCODE_BACK,SystemClock.uptimeMillis()+100);  
+		      return true;
 
-					//sendEvent(KeyEvent.ACTION_DOWN,KeyEvent.KEYCODE_BACK,SystemClock.uptimeMillis());
-					//sendEvent(KeyEvent.ACTION_UP,KeyEvent.KEYCODE_BACK,SystemClock.uptimeMillis()+100);  
-					//return true;
-				}
+			//sendEvent(KeyEvent.ACTION_DOWN,KeyEvent.KEYCODE_BACK,SystemClock.uptimeMillis());
+			//sendEvent(KeyEvent.ACTION_UP,KeyEvent.KEYCODE_BACK,SystemClock.uptimeMillis()+100);  
+			//return true;
+		}
             }
 			
 			//zcj add end 20140625
